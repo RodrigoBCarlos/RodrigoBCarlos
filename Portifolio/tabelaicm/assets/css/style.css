@@ -1,0 +1,72 @@
+*{
+	box-sizing: border-box;
+	outline: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body{
+	margin:0;
+	padding: 0;
+	background: rgb(13,106,134);
+	font-size: 2rem;
+	line-height: 1.6rem;
+	font-family: 'Open Sans', sans serif;
+}
+
+.section {
+	max-width: 90%;
+	background: #fff;
+	margin: 5rem auto;
+	padding: 2rem;
+	border-radius: 02rem;
+}
+.gridPrimaria {
+	display: flex;
+	justify-content: space-berween;
+	width: 100%;
+}
+.grid1 {
+	width: 25%;
+}
+.grid2{
+
+}
+form input, form label, form button {
+	display: block;
+	width: 100%;
+	margin-bottom: 1rem;
+}
+form input {
+	font-size: 3rem;
+	height: 5rem;
+	padding: 0 2rem;
+}
+
+form input:focus{
+	outline: 0.1rem solid rgb(13,106,134);
+}
+
+form button {
+	border: none;
+	background: rgb(13,106,134);
+	color: #fff;
+	font-size: 1.8rem;
+	/*font-width: 70rem;*/
+	height: 5rem;
+	cursor: pointer;
+}
+form button:houver {
+	background: rgb(9,40,36);
+
+}
+
+.paragrafo-resultado {
+	background: rgb(90, 235, 110);
+	padding: 2rem;
+}
+
+.bad {
+	background: rgb(228, 77, 77);
+	padding: 2rem;
+}

@@ -1,0 +1,377 @@
+
+/*Alinhamento e posicionamento das sections*/
+.menu-spacing{
+    height: 12rem;
+}
+.section-one {
+    min-height: calc(100vh - 12rem);    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-twe {
+    min-height: 100vh;  
+}
+.sectionCampo
+{
+    padding-top: 16rem;
+}
+
+/*texto da primeira seção*/
+.textOne
+{
+    padding: 0 60px;
+    width: 30%;
+    font-size: 1.1em;
+    
+}
+.textOne p
+{
+    text-align: justify;
+}
+
+/*inicio dos slides*/
+
+.imgSlide
+{
+    width: var(--medida-width);
+    height: var(--medida-height);
+}
+.slider
+{
+    width: var(--medida-width);
+    height: var(--medida-height);
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+.slides
+{
+    width: 500%;
+    height: var(--medida-height);
+    display: flex;
+
+}
+.slides input 
+{
+    display: none;
+}
+
+.slide
+{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img
+{
+    width: var(--medida-width);
+    height: var(--medida-height);
+}
+
+/*css manual slide*/
+.navigation-manual
+{
+    position: absolute;
+    width: var(--medida-width);
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn
+{
+    border: 2px solid #40d3dc;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child)
+{
+    margin-right: 40px;
+}
+
+.manual-btn:hover
+{
+    background: #40d3dc;
+}
+#radio1:checked ~ .first
+{
+   margin-left: 0; 
+}
+#radio2:checked ~ .first
+{
+   margin-left: -20%; 
+}
+#radio3:checked ~ .first
+{
+   margin-left: -40%; 
+}
+#radio4:checked ~ .first
+{
+   margin-left: -60%; 
+}
+
+/*css automatic*/
+
+.navigation-auto
+{
+    position: absolute;
+    display: flex;
+    width: var(--medida-width);
+    justify-content: center;
+    margin-top: 360px;
+}
+.navigation-auto div
+{
+    border: 2px solid #29cbfd;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1
+{
+    background: #29cbfd;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2
+{
+    background: #29cbfd;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3
+{
+    background: #29cbfd
+}
+#radio4:checked ~ .navigation-auto .auto-btn4
+{
+    background: #29cbfd;
+}
+
+/*area de experiencia*/
+.areaTotal{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    min-height: 300px;
+    flex: auto;
+}
+.area
+{
+    background: rgb(223, 221, 221);
+}
+.areaTotal > div
+{
+    flex: 1;
+    padding: 3rem;
+    margin: 4rem;
+}
+.area
+{
+    padding: 0 4rem;
+}
+
+.area h2
+{
+    font-size: 4rem;
+    text-align: center;
+    padding-bottom: 3rem;    
+    font-family: 'Playfair Display', serif;
+
+}
+.area p
+{
+    text-align: justify;
+    font-size: 2.5rem;
+    font-style: italic;    
+    font-family: 'Playfair Display', serif;
+}
+
+.func{
+    padding-bottom: 2rem;
+    font-weight: bold;
+}
+
+/*area de projetos*/
+
+.projetos-grid
+{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    min-height: 300px;
+    flex: auto;
+    
+    align-items: center;
+    justify-content: center;   
+}
+.projetosImg
+{
+    display: flex;
+    top: 0;
+    width: 30rem;
+    height:30rem;
+    border: 3px solid rgb(223, 221, 221);
+ 
+}
+.projetosImg> div
+{
+    flex: 1;
+    padding: 3rem;
+    margin: 4rem;
+}
+
+.projetosImg:hover
+{
+    top:-4px;
+    box-shadow:2rem -2rem 0.8rem rgba(2, 2, 2, 0.226);
+    transition: all .3s ease-in-out;
+}
+.projetosImg p
+{
+    align-items: center;
+    text-align: center;
+}
+
+.sectConhec
+{
+    display: block;
+
+}
+
+.sectConhecLinha
+{
+    width: 100%;
+}
+
+.contato
+{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;/*
+    justify-content: center;*/
+    flex-direction: column;
+    padding: 1rem;
+
+}
+.contato h2
+{
+    font-size: 4rem;
+    color: var(--black-color);
+    margin-bottom: 2rem;
+    text-align: center;
+    line-height: 2rem;
+
+
+}
+.contato h1::before
+{
+    content: "📧";
+    display: block;
+}
+.form
+{
+    width: 100%;
+    max-width: 40rem;
+    font-size: 1.8rem;
+}
+.form label,
+.form input,
+.form textarea,
+.form button
+{
+    display: block;
+    width: 100%;
+}
+
+.form label
+{
+    color: var(--black-color);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+.form input,
+.form textarea
+{
+    font: inherit;
+    padding: 1rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: border-color, boxshadow 0.2s;
+}
+.form textarea {
+    min-height: 13rem;
+    resize: vertical;
+}
+.form input:hover,
+.form input:focus,
+.form textarea:hover,
+.form textarea:focus {
+    outline: none;
+    border-color: #29cbfd;
+    box-shadow: 0 0 0 3px #29cbfd;
+}
+
+.form button {
+    display: block;
+    padding: 1rem;
+    background: #29cbfd;
+    color: var(--white-color);
+    font: inherit;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.form button:focus,
+.form button:focus {
+    outline: none;
+    background: #09d;
+}
+
+
+@media (max-width:900px){
+    .titulo{
+        padding: 25px;
+    }
+  
+    .section-one {
+        width: 100%;
+        padding: 10%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        background: rgb(223, 221, 221);
+    }
+    .textOne
+    {
+        width: 100%;    
+        font-size: 1.1em;
+        padding:  0px;
+        margin: 0px;
+        
+    }
+    .imgSlide{
+        display: flex;
+    }
+}
+
+@media (max-width:700px){
+    .slider
+    {
+        display:none;
+    }
+    .textOne
+    {
+        padding: 5px;
+        width: 100%;
+    }
+    
+
+}
